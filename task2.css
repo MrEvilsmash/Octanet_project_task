@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CA:wght@100..400&display=swap');
+body{
+    font-family: "poppins", sans-serif;
+    background: url(wallpaperflare.com_wallpaper\ \(8\).jpg);
+    background-size: cover;
+    color: white;
+
+    padding-top: 2rem;
+    overflow-x: hidden;
+}
+h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
+    font-family: "Playwrite CA", cursive ;
+    color: #f77145;
+}
+.container{
+    height: auto;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.todo-app{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 1rem;
+    box-shadow: 8px 8px 5px 3px rgba(255, 111, 0, 0.412);
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+input{
+    color: white;
+    font-size: 1rem;
+    font-family: "caveat";
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+    border-bottom: 1px solid white;
+
+}
+
+input::placeholder{
+    color: rgb(208, 208, 208);
+
+}
+.task-manager button {
+    padding: 10px 20px 10px 10px;
+    margin: 15px 0;
+    border: none;
+    background-color: #f77145;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .todo-app {
+        padding: 15px;
+        max-height: 300px;
+    }
+
+    input {
+        font-size: 0.9rem;
+    }
+
+    .task-manager button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .todo-app {
+        padding: 10px;
+        max-height: 250px;
+    }
+
+    input {
+        font-size: 0.8rem;
+    }
+
+    .task-manager button {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+}
+
+button:hover{
+    color: #f77145;
+    background: white;
+}
